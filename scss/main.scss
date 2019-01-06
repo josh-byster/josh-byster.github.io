@@ -1,3 +1,15 @@
+// Bootstrap colors
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
 body {
   font-family: "Lato", sans-serif;
 }
@@ -6,38 +18,69 @@ body {
 }
 .navbar {
   min-height: 5rem;
-  .btn-box{
+  .btn-box {
     margin-left: auto;
     display: block;
     font-size: 20px;
     width: 100px;
-    height:50px;
+    height: 50px;
     border-radius: 10px;
-    background-color:#3498db;
+    background-color: $green;
+    font-weight: 400;
+    transition: background-color 0.5s ease;
 
     text-align: center;
     text-decoration: none;
-    color:#fff;
+    color: #fff;
     line-height: 50px;
 
     &:hover {
-        background-color:#2980b9;
-        transition: background-color 0.5s ease;
+      background-color: #1e7e34;
     }
   }
 }
 
 .hero {
-  margin-top: 50px;
   h1 {
     font-size: 3rem;
+    margin:0;
   }
+
   h3 {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
   }
+  .light {
+    font-weight: 200;
+  }
+
   text-align: center;
   @media screen and (max-width: 768px) {
     font-size: 20px;
+  }
+  .img {
+    max-width: 250px;
+    @media screen and (max-width: 500px) {
+      max-width: 75%;
+    }
+    border-radius: 10px;
+  }
+
+  .btn-down {
+    transition: color 0.5s ease;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.projects {
+  background-color:$blue;
+  margin-top:100px;
+  h1 {
+    text-align: center;
+    font-size:3rem;
+    color:#fff;
+    
   }
 }
