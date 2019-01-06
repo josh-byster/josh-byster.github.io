@@ -10,6 +10,10 @@ $green: #28a745 !default;
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 
+h1 {
+  margin:0;
+}
+
 body {
   font-family: "Lato", sans-serif;
 }
@@ -43,7 +47,6 @@ body {
 .hero {
   h1 {
     font-size: 3rem;
-    margin:0;
   }
 
   h3 {
@@ -75,12 +78,41 @@ body {
 }
 
 .projects {
-  background-color:$blue;
+  // background-color:$blue;
   margin-top:100px;
+  // color:#fff;
+  padding:20px;
   h1 {
     text-align: center;
-    font-size:3rem;
-    color:#fff;
-    
+    font-size:2.5rem;
+  }
+
+  .row-of-three {
+    margin-top:20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    .project-col{
+      max-width:20%;
+    }
+    img {
+      max-width:100%;
+      height:auto;
+      // display: block;
+      // width:25%;
+    }
+  }
+  .row-single {
+    @media screen and (max-width:600px){
+      display:block;
+      .project-col {
+        max-width: 100%;
+      }
+      img {
+        margin-left: auto;
+        margin-right: auto;
+        display:block;
+      }
+    }
   }
 }
