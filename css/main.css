@@ -48,29 +48,32 @@ body {
     transition: color 0.5s ease; }
     .hero .btn-down:hover {
       color: #007bff; }
+  .hero hr {
+    margin-top: 50px; }
 
 .projects {
   margin-top: 100px;
   padding: 20px; }
+  .projects img {
+    border: 1px solid #aaa;
+    border-radius: 5px; }
   .projects h1 {
     text-align: center;
     font-size: 2.5rem; }
-  .projects .row-of-three {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start; }
-    .projects .row-of-three .project-col {
-      max-width: 20%; }
-    .projects .row-of-three img {
-      max-width: 100%;
-      height: auto; }
-  @media screen and (max-width: 600px) {
-    .projects .row-single {
-      display: block; }
-      .projects .row-single .project-col {
-        max-width: 100%; }
-      .projects .row-single img {
-        margin-left: auto;
-        margin-right: auto;
-        display: block; } }
+  .projects .row {
+    margin-top: 20px; }
+    .projects .row img {
+      display: block;
+      margin: 0 auto;
+      height: auto;
+      border-radius: 5%; }
+    @media screen and (min-width: 768px) {
+      .projects .row {
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch; }
+        .projects .row p {
+          margin: 0 60px; } }
+    @media screen and (max-width: 768px) {
+      .projects .row img {
+        max-width: 100%; } }

@@ -11,7 +11,7 @@ $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 
 h1 {
-  margin:0;
+  margin: 0;
 }
 
 body {
@@ -75,43 +75,41 @@ body {
       color: $blue;
     }
   }
+  hr {
+    margin-top: 50px;
+  }
 }
 
 .projects {
-  // background-color:$blue;
-  margin-top:100px;
-  // color:#fff;
-  padding:20px;
+  margin-top: 100px;
+  padding: 20px;
+  img {
+    border:1px solid #aaa;
+    border-radius: 5px;
+  }
   h1 {
     text-align: center;
-    font-size:2.5rem;
+    font-size: 2.5rem;
   }
-
-  .row-of-three {
-    margin-top:20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    .project-col{
-      max-width:20%;
-    }
+  .row {
+    margin-top: 20px;
     img {
-      max-width:100%;
-      height:auto;
-      // display: block;
-      // width:25%;
+      display: block;
+      margin:0 auto;
+      height: auto;
+      border-radius: 5%;
     }
-  }
-  .row-single {
-    @media screen and (max-width:600px){
-      display:block;
-      .project-col {
-        max-width: 100%;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch;
+      p {
+        margin: 0 60px;
       }
+    }
+    @media screen and (max-width: 768px) {
       img {
-        margin-left: auto;
-        margin-right: auto;
-        display:block;
+        max-width: 100%;
       }
     }
   }

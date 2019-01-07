@@ -24,34 +24,76 @@
   <body>
     <div class="container">
       <div class="navbar">
-        <a class="btn-box" href="#"><span>Write Me</span></a>
+        <a
+          class="btn-box"
+          href="https://byster.typeform.com/to/y9hwUi"
+          target="_blank"
+          ><span>Write Me</span></a
+        >
       </div>
       <div class="hero">
         <h1>Josh Byster</h1>
         <h3>CS Student @ UIUC, Web Developer</h3>
         <img class="img" src="images/screen.jpg" />
         <h3 class="light">Check out my latest projects below.</h3>
-        <a href="#projects"><i class="fas fa-chevron-down fa-2x btn-down"></i></a>
+        <a href="#projects"
+          ><i class="fas fa-chevron-down fa-2x btn-down"></i
+        ></a>
+        <hr />
       </div>
       <div id="projects" class="projects">
         <h1>Projects</h1>
-        <div class="row-of-three row-single">
-          <div class="project-col">
-              <img src="images/bus.png"/>
-              <p>Thousands of students at U of I rely on the Champaign-Urbana buses each day as a means of getting to class. Unfortunately, many apps to check bus times take too long to load. As college students, we need this information as soon as possible. This is a beautiful, minimalist web app with load times under one second. No clutter, no hassle, just info. Check it out on GitHub.</p>
+        <div class="row">
+          <div class="image-square">
+            <img src="images/bus.png" />
           </div>
-          <div class="project-col">
-              <img src="images/fb.png"/>
+          <div class="description">
+            <p>
+              Thousands of students at U of I rely on the Champaign-Urbana buses
+              each day as a means of getting to class. Unfortunately, many apps
+              to check bus times take too long to load. As college students, we
+              need this information as soon as possible. This is a beautiful,
+              minimalist web app with load times under one second. No clutter,
+              no hassle, just info. Check it out on GitHub.
+            </p>
           </div>
-          <div class="project-col">
-              <img src="images/twitter.png"/>
-          </div>
-          
+        </div>
+        <div class="row">
 
+          <div class="image-square" style="order:2;">
+            <img src="images/fb.png"  />
+          </div>
+
+          <div class="description" style="order:1;">
+            <p >
+              Facebook offers a neat feature which allows a user to download all
+              their data as an archive file. This includes all the (possibly
+              thousands) of messages they've ever sent or received. Wouldn't it
+              be cool to do analytics, machine learning, etc. with this data?
+              Within seconds, this Python wrapper allows users to generate a
+              word cloud with this data and access a neatly-organized list of
+              every message.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="image-square">
+            <img src="images/twitter.png" />
+          </div>  
+          <div class="description">
+            <p>
+              Recognized by the American Statistical Association, this Python
+              script uses the power of machine learning to do complex authorship
+              attribution on thousands of tweets. After acquiring an Twitter API
+              key, user can input as many public channels as they would like,
+              and the script loads and parses every tweet, generates confusion
+              matrices, finds most distinct words, and returns a trained and
+              cross-validated classifier. In classifying two channels, this is
+              ~95% accurate!
+            </p>
+          </div>
         </div>
       </div>
-
     </div>
-    
   </body>
 </html>
