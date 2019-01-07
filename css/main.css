@@ -52,7 +52,7 @@ body {
     margin-top: 50px; }
 
 .projects {
-  margin-top: 100px;
+  margin-top: 30;
   padding: 20px; }
   .projects img {
     border-radius: 5px; }
@@ -61,7 +61,7 @@ body {
     border-radius: 6%;
     display: block;
     margin: 0 auto; }
-  .projects h1 {
+  .projects .title {
     text-align: center;
     font-size: 2.5rem; }
   .projects .row {
@@ -76,8 +76,8 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: center; }
-        .projects .row p {
-          margin: 0 60px; } }
+        .projects .row .description {
+          padding: 0 60px; } }
     @media screen and (max-width: 768px) {
       .projects .row img {
         max-width: 100%; }
