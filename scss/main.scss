@@ -84,8 +84,13 @@ body {
   margin-top: 100px;
   padding: 20px;
   img {
-    border:1px solid #aaa;
     border-radius: 5px;
+  }
+  .image-square {
+    border: 1px solid #aaa;
+    border-radius: 6%;
+    display: block;
+    margin: 0 auto;
   }
   h1 {
     text-align: center;
@@ -94,15 +99,15 @@ body {
   .row {
     margin-top: 20px;
     img {
-      display: block;
-      margin:0 auto;
+      padding: 10px;
+      box-sizing: border-box;
       height: auto;
       border-radius: 5%;
     }
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: space-around;
-      align-items: stretch;
+      align-items: center;
       p {
         margin: 0 60px;
       }
@@ -110,6 +115,9 @@ body {
     @media screen and (max-width: 768px) {
       img {
         max-width: 100%;
+      }
+      .image-square {
+        max-width: 50%;
       }
     }
   }
