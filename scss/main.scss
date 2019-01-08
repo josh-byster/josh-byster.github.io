@@ -95,6 +95,9 @@ body {
     border-radius: 6%;
     display: block;
     margin: 0 auto;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
   }
   .title {
     text-align: center;
@@ -145,5 +148,9 @@ body {
     &.justify-left {
       justify-content: flex-start;
     }
+  }
+
+  hr {
+    margin: 30px auto;
   }
 }
