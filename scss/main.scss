@@ -58,7 +58,7 @@ body {
   }
 
   text-align: center;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     font-size: 20px;
   }
   .img {
@@ -95,8 +95,11 @@ body {
     border-radius: 6%;
     display: block;
     margin: 0 auto;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
       margin-bottom: 30px;
+    }
+    &:hover {
+      color: #fff;
     }
   }
   .title {
@@ -112,7 +115,7 @@ body {
       height: auto;
       border-radius: 5%;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1000px) {
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -123,10 +126,17 @@ body {
         min-height: 0;
       }
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
       img {
         max-width: 100%;
       }
+      .image-square {
+        max-width: 30%;
+      }
+    }
+
+    // Enlarge a bit for mobile
+    @media screen and (max-width: 500px) {
       .image-square {
         max-width: 50%;
       }
@@ -151,6 +161,9 @@ body {
   }
 
   hr {
-    margin: 30px auto;
+    margin: 100px auto;
+    @media screen and (max-width: 1000px) {
+      margin: 50px auto; // Don't need as much space on smaller devices
+    }
   }
 }

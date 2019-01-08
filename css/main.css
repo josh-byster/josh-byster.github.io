@@ -45,7 +45,7 @@ body {
 .hero .light {
   font-weight: 200;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .hero {
     font-size: 20px;
   }
@@ -86,10 +86,13 @@ body {
   display: block;
   margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .projects .image-square {
     margin-bottom: 30px;
   }
+}
+.projects .image-square:hover {
+  color: #fff;
 }
 .projects .title {
   text-align: center;
@@ -104,7 +107,7 @@ body {
   height: auto;
   border-radius: 5%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .projects .row {
     display: flex;
     justify-content: space-around;
@@ -116,10 +119,15 @@ body {
     min-height: 0;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .projects .row img {
     max-width: 100%;
   }
+  .projects .row .image-square {
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 500px) {
   .projects .row .image-square {
     max-width: 50%;
   }
@@ -140,5 +148,10 @@ body {
   justify-content: flex-start;
 }
 .projects hr {
-  margin: 30px auto;
+  margin: 100px auto;
+}
+@media screen and (max-width: 1000px) {
+  .projects hr {
+    margin: 50px auto;
+  }
 }
