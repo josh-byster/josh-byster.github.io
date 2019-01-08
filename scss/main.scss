@@ -131,11 +131,15 @@ body {
     max-width: 100%;
     align-items: center;
     justify-content: space-between;
+
     img {
       width: 100px;
       height: 100%;
       min-width: 0;
       min-height: 0;
+    }
+    &.justify-left {
+      justify-content: flex-start;
     }
   }
 }

@@ -1,97 +1,132 @@
 h1 {
-  margin: 0; }
+  margin: 0;
+}
 
 body {
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+}
 
 .container {
-  margin: 3rem 3rem 0 3rem; }
+  margin: 3rem 3rem 0 3rem;
+}
 
 .navbar {
-  min-height: 5rem; }
-  .navbar .btn-box {
-    margin-left: auto;
-    display: block;
-    font-size: 20px;
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: #28a745;
-    font-weight: 400;
-    transition: background-color 0.5s ease;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    line-height: 50px; }
-    .navbar .btn-box:hover {
-      background-color: #1e7e34; }
+  min-height: 5rem;
+}
+.navbar .btn-box {
+  margin-left: auto;
+  display: block;
+  font-size: 20px;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #28a745;
+  font-weight: 400;
+  transition: background-color 0.5s ease;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  line-height: 50px;
+}
+.navbar .btn-box:hover {
+  background-color: #1e7e34;
+}
 
 .hero {
-  text-align: center; }
-  .hero h1 {
-    font-size: 3rem; }
-  .hero h3 {
-    font-size: 1.5rem;
-    font-weight: 400; }
-  .hero .light {
-    font-weight: 200; }
-  @media screen and (max-width: 768px) {
-    .hero {
-      font-size: 20px; } }
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.hero h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.hero .light {
+  font-weight: 200;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    font-size: 20px;
+  }
+}
+.hero .img {
+  max-width: 250px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 500px) {
   .hero .img {
-    max-width: 250px;
-    border-radius: 10px; }
-    @media screen and (max-width: 500px) {
-      .hero .img {
-        max-width: 75%; } }
-  .hero .btn-down {
-    transition: color 0.5s ease; }
-    .hero .btn-down:hover {
-      color: #007bff; }
-  .hero hr {
-    margin-top: 50px; }
+    max-width: 75%;
+  }
+}
+.hero .btn-down {
+  transition: color 0.5s ease;
+}
+.hero .btn-down:hover {
+  color: #007bff;
+}
+.hero hr {
+  margin-top: 50px;
+}
 
 .projects {
   margin-top: 30;
-  padding: 20px; }
-  .projects img {
-    border-radius: 5px; }
-  .projects .image-square {
-    border: 1px solid #aaa;
-    border-radius: 6%;
-    display: block;
-    margin: 0 auto; }
-  .projects .title {
-    text-align: center;
-    font-size: 2.5rem; }
+  padding: 20px;
+}
+.projects img {
+  border-radius: 5px;
+}
+.projects .image-square {
+  border: 1px solid #aaa;
+  border-radius: 6%;
+  display: block;
+  margin: 0 auto;
+}
+.projects .title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.projects .row {
+  margin-top: 20px;
+}
+.projects .row img {
+  padding: 10px;
+  box-sizing: border-box;
+  height: auto;
+  border-radius: 5%;
+}
+@media screen and (min-width: 768px) {
   .projects .row {
-    margin-top: 20px; }
-    .projects .row img {
-      padding: 10px;
-      box-sizing: border-box;
-      height: auto;
-      border-radius: 5%; }
-    @media screen and (min-width: 768px) {
-      .projects .row {
-        display: flex;
-        justify-content: space-around;
-        align-items: center; }
-        .projects .row .description {
-          padding: 0 60px;
-          min-width: 0;
-          min-height: 0; } }
-    @media screen and (max-width: 768px) {
-      .projects .row img {
-        max-width: 100%; }
-      .projects .row .image-square {
-        max-width: 50%; } }
-  .projects .stack {
     display: flex;
-    max-width: 100%;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between; }
-    .projects .stack img {
-      width: 100px;
-      height: 100%;
-      min-width: 0;
-      min-height: 0; }
+  }
+  .projects .row .description {
+    padding: 0 60px;
+    min-width: 0;
+    min-height: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .projects .row img {
+    max-width: 100%;
+  }
+  .projects .row .image-square {
+    max-width: 50%;
+  }
+}
+.projects .stack {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.projects .stack img {
+  width: 100px;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+.projects .stack.justify-left {
+  justify-content: flex-start;
+}
