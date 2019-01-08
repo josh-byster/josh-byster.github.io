@@ -80,6 +80,10 @@ body {
   }
 }
 
+.drop-shadow {
+  box-shadow: 0 10px 16px 0 rgba(26, 21, 21, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .projects {
   margin-top: 30;
   padding: 20px;
@@ -87,7 +91,7 @@ body {
     border-radius: 5px;
   }
   .image-square {
-    border: 1px solid #aaa;
+    // border: 1px solid #aaa;
     border-radius: 6%;
     display: block;
     margin: 0 auto;
