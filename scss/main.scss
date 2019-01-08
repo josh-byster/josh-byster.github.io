@@ -87,6 +87,12 @@ body {
 .projects {
   margin-top: 30;
   padding: 20px;
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: grey;
+  }
   img {
     border-radius: 5px;
   }
@@ -148,7 +154,7 @@ body {
     max-width: 100%;
     align-items: center;
     justify-content: space-between;
-
+    flex-wrap: wrap;
     img {
       width: 100px;
       height: 100%;
