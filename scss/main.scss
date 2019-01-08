@@ -109,7 +109,7 @@ body {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      
+
       .description {
         padding: 0 60px;
         min-width: 0; // So that container shrinks to fit tech stack
@@ -127,15 +127,14 @@ body {
   }
 
   .stack {
-    display:flex;
+    display: flex;
     max-width: 100%;
     align-items: center;
     justify-content: space-between;
-
     img {
       width: 100px;
-      height:100%;
-      min-width:0;
+      height: 100%;
+      min-width: 0;
       min-height: 0;
     }
   }
