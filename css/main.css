@@ -103,6 +103,11 @@ body {
 .projects a {
   color: #3498db;
   text-decoration: none;
+  transition: color 0.5s;
+}
+.projects a:hover {
+  color: #2c3e50;
+  transition: color 0.5s;
 }
 .projects p {
   font-size: 1.1rem;
