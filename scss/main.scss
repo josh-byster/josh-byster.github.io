@@ -49,12 +49,29 @@ body {
     font-size: 3rem;
   }
 
+  .brands {
+    display: inline-block;
+
+    i {
+      color: #b0b0b0;
+      transition: color 0.5s;
+      &:hover {
+        color: $blue;
+        transition: color 0.5s;
+      }
+      &.last {
+        margin-right: 0px;
+      }
+      margin-right: 40px;
+    }
+  }
+
   h3 {
     font-size: 1.5rem;
     font-weight: 400;
   }
   .light {
-    font-weight: 200;
+    font-weight: 300;
   }
 
   text-align: center;
