@@ -201,6 +201,7 @@ body {
 
   hr {
     margin: 100px auto;
+
     @media screen and (max-width: 1000px) {
       margin: 50px auto; // Don't need as much space on smaller devices
     }
