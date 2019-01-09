@@ -193,3 +193,6 @@ body {
     margin: 50px auto;
   }
 }
+.projects hr.final {
+  margin: 100px auto 50px auto;
+}
