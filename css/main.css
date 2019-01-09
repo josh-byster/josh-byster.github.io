@@ -116,6 +116,10 @@ body {
   border-radius: 6%;
   display: block;
   margin: 0 auto;
+  width: 370px;
+}
+.projects .image-square img {
+  width: 100%;
 }
 @media screen and (max-width: 1000px) {
   .projects .image-square {
