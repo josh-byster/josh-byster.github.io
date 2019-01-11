@@ -174,11 +174,9 @@ body {
   max-width: 100%;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .projects .stack img {
   width: 100px;
-  height: 100%;
   min-width: 0;
   min-height: 0;
 }
