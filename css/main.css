@@ -175,6 +175,11 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 550px) {
+  .projects .stack {
+    flex-wrap: wrap;
+  }
+}
 .projects .stack img {
   width: 100px;
   min-width: 0;
