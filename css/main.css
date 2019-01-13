@@ -134,6 +134,12 @@ body {
 .projects .title {
   text-align: center;
   font-size: 3.2rem;
+  margin-bottom: 75px;
+}
+@media screen and (max-width: 1000px) {
+  .projects .title {
+    margin-bottom: 50px;
+  }
 }
 .projects .row {
   margin-top: 20px;
