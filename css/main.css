@@ -191,8 +191,8 @@ body {
   min-width: 0;
   min-height: 0;
 }
-.projects .stack.justify-left {
-  justify-content: flex-start;
+.projects .stack.justify-around {
+  justify-content: space-around;
 }
 .projects hr {
   margin: 100px auto;
