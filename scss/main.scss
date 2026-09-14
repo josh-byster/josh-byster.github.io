@@ -30,7 +30,7 @@ body {
 a { color: var(--link); text-underline-offset: 4px; text-decoration-thickness: 1px; }
 a:hover { color: #187a42; }
 a:focus-visible { outline: 2px solid #187a42; outline-offset: 5px; }
-h1, h2, h3, p { margin: 0; }
+h1, h2, h3, h4, p { margin: 0; }
 .page { max-width: 1020px; margin: auto; padding: 0 44px; }
 .intro {
   display: grid;
@@ -88,7 +88,7 @@ h2 { font-size: 23px; font-weight: 600; letter-spacing: -.6px; }
 .date-year { display: block; font-size: 24px; font-weight: 600; letter-spacing: -.6px; line-height: 32px; }
 .project { margin-left: 37px; padding: 27px 0 27px; border-bottom: 1px solid var(--line); min-width: 0; }
 .project-heading { display: flex; gap: 12px; align-items: center; margin-bottom: 10px; }
-h3 { font-size: 20px; font-weight: 600; line-height: 1.45; letter-spacing: -.4px; }
+h4 { font-size: 20px; font-weight: 600; line-height: 1.45; letter-spacing: -.4px; }
 .project-icon-slot { position: relative; width: 32px; height: 32px; flex: 0 0 32px; display: grid; place-items: center; overflow: hidden; }
 .project-icon { display: block; width: 30px; height: 30px; object-fit: contain; }
 .project-icon-lah { position: absolute; width: 72px; height: auto; max-width: none; left: -24px; top: -9px; }
@@ -131,7 +131,7 @@ footer a { color: var(--secondary); text-decoration: none; }
   .timeline-date::before { right: auto; left: -31px; top: 34px; }
   .date-year { font-size: 21px; line-height: 28px; }
   .project { margin-left: 0; padding: 15px 0 26px; }
-  h3 { font-size: 20px; }
+  h4 { font-size: 20px; }
   .project-heading { gap: 10px; align-items: center; }
   .project > p { font-size: 16px; }
   .more-projects { margin-left: 31px; }
@@ -247,3 +247,20 @@ footer a {
 .recent-projects { min-width: 0; }
 
 .project-icon-rounded { border-radius: 6px; }
+
+/* Life stages belong with the dates, separate from project titles. */
+.chapter-label {
+  margin-top: 6px;
+  color: var(--secondary);
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+@media (max-width: 760px) and (min-width: 521px) {
+  .chapter-label { font-size: 12px; }
+}
+@media (max-width: 520px) {
+  .timeline-date { align-items: center; gap: 12px; }
+  .chapter-label { margin: 0; font-size: 14px; }
+}
