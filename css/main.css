@@ -90,9 +90,6 @@ h2 { font-size: 23px; font-weight: 600; letter-spacing: -.6px; }
 .project { margin-left: 37px; padding: 27px 0 27px; border-bottom: 1px solid var(--line); min-width: 0; }
 .project-heading { display: flex; gap: 12px; align-items: center; margin-bottom: 10px; }
 h3 { font-size: 20px; font-weight: 600; line-height: 1.45; letter-spacing: -.4px; }
-h3 a { color: var(--text); text-decoration: none; }
-h3 a:hover { color: var(--link); text-decoration: underline; }
-h3 span { display: inline-block; font-weight: 400; font-size: 14px; margin-left: 4px; color: var(--secondary); }
 .project-icon-slot { position: relative; width: 32px; height: 32px; flex: 0 0 32px; display: grid; place-items: center; overflow: hidden; }
 .project-icon { display: block; width: 30px; height: 30px; object-fit: contain; }
 .project-icon-lah { position: absolute; width: 72px; height: auto; max-width: none; left: -24px; top: -9px; }
@@ -172,7 +169,6 @@ footer { flex-wrap: wrap; gap: 12px; }
   text-decoration: none;
 }
 .project-links a:hover { background: var(--ink-accent); color: #fff; }
-h3 a:hover { color: var(--ink-accent); }
 @media (max-width: 520px) {
   .timeline-entry { border-left-color: var(--accent-wash); }
   .timeline-date::before { left: -33px; right: auto; }
@@ -186,8 +182,6 @@ h3 a:hover { color: var(--ink-accent); }
     color 160ms ease, transform 160ms ease;
 }
 .intro-links svg { transition: transform 180ms ease; }
-h3 a { transition: color 160ms ease; }
-h3 a span[aria-hidden] { transition: transform 180ms ease, color 160ms ease; }
 .project-icon-slot { transition: transform 200ms ease; }
 
 .intro-copy p a,
@@ -206,9 +200,6 @@ footer a {
   .project-links a:hover { transform: translateY(-2px); }
   .intro-primary:hover svg { transform: translateY(3px); }
   .intro-secondary:hover svg { transform: translate(2px, -2px); }
-  h3 a:hover { text-decoration: none; }
-  h3 a:hover span { transform: translate(3px, -3px); color: var(--ink-accent); }
-  .project:has(h3 a:hover) .project-icon-slot { transform: translateY(-3px); }
   .intro-copy p a:hover { background-size: 100% 1px; }
   footer a:hover { background-size: 100% 1px; }
 }
@@ -218,11 +209,8 @@ footer a {
 .project-links a:focus-visible { outline-offset: 4px; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; }
-  .intro-links a, .intro-links svg, .project-links a,
-  h3 a span[aria-hidden], .project-icon-slot { transform: none !important; }
+  .intro-links a, .intro-links svg, .project-links a { transform: none !important; }
 }
-
-h3 .title-ending { display: inline-block; color: inherit; font: inherit; margin: 0; white-space: nowrap; }
 
 /* Choreographed entrance, using only transforms, opacity, and a portrait mask. */
 @keyframes arrive {
