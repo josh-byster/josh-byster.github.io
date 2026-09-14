@@ -1,303 +1,98 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
-    <link
-      rel="icon"
-      type="image/png"
-      href="/images/favicon-32x32.png"
-      sizes="32x32"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/images/favicon-16x16.png"
-      sizes="16x16"
-    />
-    <title>Josh Byster</title>
-    <script src="https://unpkg.com/scrollreveal"></script>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
+    <meta name="description" content="Josh Byster, software engineer. Projects in web development, data visualization, and technology for nonprofits." />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="preload" href="fonts/dm-sans-variable.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="stylesheet" href="css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
+    <title>Josh Byster</title>
   </head>
-
   <body>
-    <div class="container">
-      <div class="hero">
-        <h1>Josh Byster</h1>
-        <br />
-        <h3>
-          Software Engineer<br />University of Illinois at Urbana—Champaign '20
-        </h3>
-        <img class="profile drop-shadow" src="images/josh.jpg" />
-        <h3>
-          Please scroll down for my latest projects or connect with me on a
-          channel below!
-        </h3>
-        <div class="brands">
-          <a href="https://www.linkedin.com/in/joshbyster"
-            ><i class="fab fa-linkedin-in fa-2x"></i
-          ></a>
-          <a href="https://github.com/josh-byster"
-            ><i class="fab fa-github fa-2x last"></i
-          ></a>
-        </div>
-        <hr />
-      </div>
-
-      <div id="projects" class="projects">
-        <h1 class="title">Projects</h1>
-
-        <!-- Good With Anything -->
-        <div class="row">
-          <a href="https://goodwithanything.com/" style="order:2;"
-            ><div class="image-square drop-shadow">
-              <img src="images/goodwithanything.png" alt="Good With Anything Icon" /></div
-          ></a>
-          <div class="description" style="order:1;">
-            <h1>Good With Anything</h1>
-            <p>
-              A collaborative restaurant decision-making app for when nobody can
-              decide where to eat. Two people build a shared list of
-              restaurants, then use turn-based elimination to reach a final
-              decision together. The host creates a session and shares a link
-              with their partner, both add restaurants, and then take turns
-              eliminating options until a winner emerges. Check out the
-              <a href="https://github.com/josh-byster/good-with-anything"
-                >source code</a
-              >.
-              <br />
-              Tech Stack:
-            </p>
-
-            <div class="stack">
-              <img src="images/react.png" alt="ReactJS" />
-              <img src="images/vite.svg" alt="Vite" />
-              <img src="images/tailwind.svg" alt="Tailwind CSS" />
-              <img src="images/nodejs.png" alt="NodeJS" />
-              <img src="images/redis.png" alt="Redis" />
-              <img src="images/docker.png" alt="Docker" />
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page">
+      <main id="main">
+        <section class="intro" aria-labelledby="intro-title">
+          <div class="intro-heading">
+            <h1 id="intro-title">Hi, I’m <span>Josh.</span></h1>
+          </div>
+          <div class="intro-copy">
+            <p class="intro-lead">I started writing HTML when I was seven, and I’ve loved making helpful stuff for people ever since.</p>
+            <p>I earned my degree in Computer Science and Math at UIUC and graduated in 2020. While in college, I built tools to help nonprofits through <a href="https://uiuc.hack4impact.org/">Hack4Impact</a>.</p>
+            <div class="intro-links">
+              <a class="intro-primary" href="#projects">View projects <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14m-6-6 6 6 6-6" /></svg></a>
+              <a class="intro-secondary" href="https://github.com/josh-byster">GitHub <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12" /></svg></a>
+              <a class="intro-secondary" href="https://www.linkedin.com/in/joshbyster">LinkedIn <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12" /></svg></a>
             </div>
           </div>
-        </div>
-        <hr />
-
-        <!-- COVID Map -->
-        <div class="row">
-          <a href="https://covidmap.joshbyster.com/" style="order:1;"
-            ><div class="image-square drop-shadow">
-              <img src="images/map.png" alt="Bus Icon" /></div
-          ></a>
-          <div class="description" style="order:2;">
-            <h1>COVID-19 Interactive Timeline</h1>
-            <p>
-              As a visual learner, I found it challenging to get a full picture
-              on the pandemic's progression through many of the "daily snapshot"
-              maps that were shown on the news. Inspired by Andrew Munsell's
-              <a href="https://ebola.andrewmunsell.com/">Ebola Visualization</a
-              >, this tool focuses on bridging the gap between the useful static
-              maps and the key visualization element: time. Contributions are
-              welcome on
-              <a href="https://github.com/josh-byster/covid19-map">GitHub</a>.
-              <br />
-              Tech Stack:
-            </p>
-
-            <div class="stack justify-around">
-              <img src="images/d3.png" alt="D3.js" />
-              <img src="images/now.png" alt="Now" />
-              <img src="images/webpack.png" alt="Webpack" />
-            </div>
+          <img class="portrait" src="images/josh.jpg" alt="Josh Byster smiling" width="600" height="600" fetchpriority="high" />
+        </section>
+        <section id="projects" aria-labelledby="projects-title">
+          <div class="section-heading">
+            <h2 id="projects-title">My projects, over time</h2>
+            <span>From the latest back to the beginning ↓</span>
           </div>
-        </div>
-        <hr />
-
-        <!-- LAH -->
-        <div class="row">
-          <a
-            href="https://github.com/hack4impact-uiuc/life-after-hate"
-            style="order:2;"
-            ><div class="image-square drop-shadow">
-              <img src="images/lah.png" alt="Bus Icon" /></div
-          ></a>
-          <div class="description" style="order:1;">
-            <h1>Life After Hate — Resource Map</h1>
-            <p>
-              Life After Hate is a nonprofit organization committed to helping
-              people leave the violent far-right and lead compassionate lives.
-              In order to better track resource partners through their ExitUSA
-              program, we at
-              <a href="https://uiuc.hack4impact.org/">Hack4Impact UIUC</a>
-              created an interactive resource map for Life After Hate staff.
-              Through this application, staff members can quickly log into a
-              secure portal and search for specific partners who make up the
-              Life After Hate resource network. I am incredibly fortunate to be
-              leading a team of talented developers working to bring this
-              project to fruition. Please see more details on our
-              <a href="https://github.com/hack4impact-uiuc/life-after-hate"
-                >GitHub</a
-              >. <br />
-              Tech Stack:
-            </p>
-
-            <div class="stack">
-              <img src="images/react.png" alt="ReactJS" />
-              <img src="images/redux.png" alt="Redux" />
-              <img src="images/nodejs.png" alt="NodeJS" />
-              <img src="images/now.png" alt="Now" />
-              <img src="images/mapbox.png" alt="Mapbox" />
-              <img src="images/docker.png" alt="Docker" />
-            </div>
-          </div>
-        </div>
-        <hr />
-
-        <!-- UIUC Bus -->
-        <div class="row">
-          <a href="https://uiucbus.com/"
-            ><div class="image-square drop-shadow">
-              <img src="images/bus-orange.png" alt="Bus Icon" /></div
-          ></a>
-          <div class="description">
-            <h1>UIUC Bus Tracker</h1>
-            <p>
-              Thousands of students at U of I rely on the Champaign-Urbana buses
-              each day as a means of getting to class. Unfortunately, many apps
-              to check bus times take too long to load. As college students, we
-              need this information as soon as possible. This is a simple,
-              minimalist web app designed for frequent bus riders in
-              Urbana—Champaign. No clutter, no ads, no hassle, just info. Used
-              by hundreds of students and faculty on a daily basis. Uses a CDN
-              and API response caching with Redis to ensure the fastest load
-              times for users. Please feel free to check out the
-              <a href="https://uiucbus.com">site</a>,
-              <a href="https://github.com/josh-byster/bus-tracker">frontend</a>,
-              and
-              <a href="https://github.com/josh-byster/uiucbus-backend"
-                >backend</a
-              >
-              code. <br />
-              Tech Stack:
-            </p>
-
-            <div class="stack">
-              <img src="images/react.png" alt="ReactJS" />
-              <img src="images/nodejs.png" alt="NodeJS" />
-              <img src="images/travis.jpeg" alt="TravisCI" />
-              <img src="images/ghpages.png" alt="GitHub Pages" />
-              <img src="images/redis.png" alt="Redis" />
-              <img src="images/heroku.png" alt="Heroku" />
-              <img src="images/docker.png" alt="Docker" />
-            </div>
-          </div>
-        </div>
-        <hr />
-        <!-- Philadelphia Reads -->
-        <div class="row">
-          <a
-            href="https://github.com/hack4impact-uiuc/philareads"
-            style="order:2;"
-            ><div class="image-square drop-shadow">
-              <img src="images/book-green.png" alt="Book Icon" /></div
-          ></a>
-
-          <div class="description" style="order:1;">
-            <h1>Philadelphia READS<sup>©</sup> Web App</h1>
-            <p>
-              Philadelpha READS<sup>©</sup> makes an impact on thousands of
-              students each year through their programs to help increase
-              literacy in Philadelphia. As a volunteer software engineer for
-              Hack4Impact, I had the opportunity to work with an incredible team
-              of developers to create a web app for students from fourth through
-              eighth grade. The app allows students to prepare for Philadelphia
-              READS <i>Reading Olympics</i>, an annual competition where over
-              1,500 participants form reading teams and put their comprehension
-              to the test. Please feel free to have a look at the
-
-              <a href="https://github.com/hack4impact-uiuc/philareads"
-                >source code.</a
-              >
-              <br />
-              Tech Stack:
-            </p>
-            <div class="stack">
-              <img src="images/react.png" alt="ReactJS" />
-              <img src="images/python.png" alt="Python" />
-              <img src="images/postgresql.png" alt="Postgresql" />
-              <img src="images/nodejs.png" alt="NodeJS" />
-              <img src="images/circleci.png" alt="CircleCI" />
-              <img src="images/digitalocean.png" alt="DigitalOcean" />
-            </div>
-          </div>
-        </div>
-        <hr />
-        <!-- Twitter SVM -->
-        <div class="row">
-          <a href="https://github.com/josh-byster/twitter-svm"
-            ><div class="image-square drop-shadow">
-              <img src="images/twitter.png" /></div
-          ></a>
-          <div class="description">
-            <h1>Twitter Support Vector Machine</h1>
-            <p>
-              Recognized by the American Statistical Association for outstanding
-              use in machine learning at science fair, this Python script allows
-              users to carry out authorship attribution algorithms on thousands
-              of tweets. After acquiring an Twitter API key, users can input as
-              many public channels as they would like, and the script loads and
-              parses every tweet, generates confusion matrices, finds the most
-              distinct words, and returns a trained and cross-validated
-              classifier. A properly trained model can correctly pick between
-              two possible authors of a of a given tweet 95% of the time! Please
-              feel free to have a look at the
-              <a href="https://github.com/josh-byster/twitter-svm"
-                >source code.</a
-              ><br />
-              Tech Stack:
-            </p>
-            <div class="stack justify-around">
-              <img src="images/python.png" alt="Python" />
-              <img src="images/c9.png" alt="Cloud9" />
-            </div>
-          </div>
-        </div>
-        <hr class="final" />
-        <div class="footer">
-          <h3>
-            More projects are available on my
-            <a href="https://github.com/josh-byster">GitHub.</a>
-          </h3>
-          <p>Copyright &copy; 2023 joshbyster.com</p>
-          <div>
-            Icons made by
-            <a href="https://www.flaticon.com/authors/google" title="Google"
-              >Google</a
-            >
-            from
-            <a href="https://www.flaticon.com/" title="Flaticon"
-              >www.flaticon.com</a
-            >
-          </div>
-        </div>
-      </div>
+          <ol class="timeline">
+            <li class="timeline-entry" style="--accent: #27ae60"><div class="timeline-date"><span class="date-year">Recent</span></div>
+            <article class="project" aria-labelledby="project-2025">
+              <div class="project-heading"><span class="project-icon-slot" aria-hidden="true"><img class="project-icon" src="images/goodwithanything.png" alt="" width="44" height="44" loading="lazy" /></span><h3 id="project-2025"><a href="https://goodwithanything.com/">Good With Anything <span aria-hidden="true">↗</span></a></h3></div>
+            <p>A restaurant decision app for two people. Build a shared list, then take turns eliminating options until you agree on where to eat.</p>
+            <p class="technologies">React · Vite · Tailwind · Node.js · Redis · Docker</p>
+            <div class="project-links"><a href="https://goodwithanything.com/">Website</a></div>
+          </article>
+            </li>
+            <li class="timeline-entry" style="--accent: #3498db"><div class="timeline-date"><time datetime="2020-03"><span class="date-year">2020</span><span class="date-month">March</span></time></div>
+            <article class="project" aria-labelledby="project-2020">
+              <div class="project-heading"><span class="project-icon-slot" aria-hidden="true"><img class="project-icon" src="images/map.png" alt="" width="44" height="44" loading="lazy" /></span><h3 id="project-2020"><a href="https://covidmap.joshbyster.com/">COVID-19 Interactive Timeline <span aria-hidden="true">↗</span></a></h3></div>
+            <p>An interactive map showing how the pandemic developed over time. Built to make the progression easier to understand than a series of daily snapshots.</p>
+            <p class="technologies">D3.js · Webpack · Now</p>
+            <div class="project-links"><a href="https://covidmap.joshbyster.com/">Website</a><a href="https://github.com/josh-byster/covid19-map">Source</a></div>
+          </article>
+            </li>
+            <li class="timeline-entry" style="--accent: #9b59b6"><div class="timeline-date"><time datetime="2019-09"><span class="date-year">2019</span><span class="date-month">September</span></time></div>
+            <article class="project" aria-labelledby="project-2019">
+              <div class="project-heading"><span class="project-icon-slot" aria-hidden="true"><img class="project-icon project-icon-lah" src="images/lah.png" alt="" width="44" height="44" loading="lazy" /></span><h3 id="project-2019"><a href="https://github.com/hack4impact-uiuc/life-after-hate">Life After Hate — Resource <span class="title-ending">Map <span aria-hidden="true">↗</span></span></a></h3></div>
+            <p>A searchable resource network for a nonprofit helping people leave violent extremism. I led a Hack4Impact team building tools for staff to find and manage support partners.</p>
+            <p class="technologies">React · Redux · Node.js · Mapbox · Docker</p>
+            <div class="project-links"><a href="https://github.com/hack4impact-uiuc/life-after-hate">Source</a></div>
+          </article>
+            </li>
+            <li class="timeline-entry" style="--accent: #27ae60"><div class="timeline-date"><time datetime="2018-10"><span class="date-year">2018</span><span class="date-month">October</span></time></div>
+            <article class="project" aria-labelledby="project-2018">
+              <div class="project-heading"><span class="project-icon-slot" aria-hidden="true"><img class="project-icon" src="images/book-green.png" alt="" width="44" height="44" loading="lazy" /></span><h3 id="project-2018"><a href="https://github.com/hack4impact-uiuc/philareads">Philadelphia READS <span aria-hidden="true">↗</span></a></h3></div>
+            <p>A web app built with Hack4Impact to help fourth- through eighth-grade students prepare for the Reading Olympics, a team competition with over 1,500 participants.</p>
+            <p class="technologies">React · Python · PostgreSQL · Node.js</p>
+            <div class="project-links"><a href="https://github.com/hack4impact-uiuc/philareads">Source</a></div>
+          </article>
+            </li>
+            <li class="timeline-entry" style="--accent: #f1c40f"><div class="timeline-date"><time datetime="2017-09"><span class="date-year">2017</span><span class="date-month">September</span></time></div>
+            <article class="project" aria-labelledby="project-2017">
+              <div class="project-heading"><span class="project-icon-slot" aria-hidden="true"><img class="project-icon" src="images/bus-orange.png" alt="" width="44" height="44" loading="lazy" /></span><h3 id="project-2017"><a href="https://uiucbus.com/">UIUC Bus Tracker <span aria-hidden="true">↗</span></a></h3></div>
+            <p>A minimal bus tracker for Champaign-Urbana students and faculty. Uses a CDN and Redis caching to get arrival times on screen quickly.</p>
+            <p class="technologies">React · Node.js · Redis · Docker</p>
+            <div class="project-links"><a href="https://uiucbus.com/">Website</a><a href="https://github.com/josh-byster/uiucbus">Frontend</a><a href="https://github.com/josh-byster/uiucbus-backend">Backend</a></div>
+          </article>
+            </li>
+            <li class="timeline-entry" style="--accent: #34495e"><div class="timeline-date"><time datetime="2015-11"><span class="date-year">2015</span><span class="date-month">November</span></time></div>
+            <article class="project" aria-labelledby="project-2015">
+              <div class="project-heading"><span class="project-icon-slot" aria-hidden="true"><img class="project-icon" src="images/twitter.png" alt="" width="44" height="44" loading="lazy" /></span><h3 id="project-2015"><a href="https://github.com/josh-byster/twitter-svm">Twitter Authorship Classifier <span aria-hidden="true">↗</span></a></h3></div>
+            <p>A support vector machine that identifies the likely author of a tweet. Recognized by the American Statistical Association for its use of machine learning.</p>
+            <p class="technologies">Python · Machine learning</p>
+            <div class="project-links"><a href="https://github.com/josh-byster/twitter-svm">Source</a></div>
+          </article>
+            </li>
+          </ol>
+          <div class="intro-links more-projects"><a class="intro-secondary" href="https://github.com/josh-byster">More on GitHub <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12" /></svg></a></div>
+        </section>
+      </main>
+      <footer>
+        <span>© <span id="year">2026</span> Josh Byster</span>
+        <a href="#main">Back to top ↑</a>
+        <small class="icon-credit">Icons by <a href="https://www.flaticon.com/authors/google">Google</a> / <a href="https://www.flaticon.com/">Flaticon</a></small>
+      </footer>
     </div>
-    <script>
-      ScrollReveal().reveal(".row", { delay: 100 });
-    </script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </body>
 </html>
