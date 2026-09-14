@@ -223,3 +223,37 @@ footer a {
 }
 
 h3 .title-ending { display: inline-block; color: inherit; font: inherit; margin: 0; white-space: nowrap; }
+
+/* Choreographed entrance, using only transforms, opacity, and a portrait mask. */
+@keyframes arrive {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes greeting-reveal {
+  from { opacity: 0; transform: translateY(105%) rotate(2deg); }
+  to { opacity: 1; transform: translateY(0) rotate(0); }
+}
+@keyframes portrait-reveal {
+  from { opacity: 0; clip-path: circle(0% at 50% 50%); transform: scale(.9); }
+  to { opacity: 1; clip-path: circle(50% at 50% 50%); transform: scale(1); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .intro-heading { overflow: hidden; padding-bottom: 8px; margin-bottom: -8px; }
+  .intro-heading h1 { animation: greeting-reveal 850ms cubic-bezier(.16, 1, .3, 1) both; transform-origin: left bottom; }
+  .intro > .portrait { animation: portrait-reveal 950ms cubic-bezier(.16, 1, .3, 1) 100ms both; }
+  .intro-copy > p,
+  .intro-copy > .intro-links,
+  .section-heading {
+    animation: arrive 700ms cubic-bezier(.16, 1, .3, 1) both;
+  }
+  .intro-copy > .intro-lead { animation-delay: 180ms; }
+  .intro-copy > p + p { animation-delay: 260ms; }
+  .intro-copy > .intro-links { animation-delay: 340ms; }
+  .section-heading { animation-delay: 380ms; }
+  .timeline-entry[data-reveal="pending"] { opacity: 0; transform: translateY(18px); }
+  .timeline-entry[data-reveal="visible"] {
+    animation: arrive 700ms cubic-bezier(.16, 1, .3, 1) var(--reveal-delay, 0ms) both;
+  }
+  .intro-copy > .intro-links:focus-within,
+  .timeline-entry:focus-within { animation: none; opacity: 1; transform: none; }
+}

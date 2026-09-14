@@ -93,6 +93,42 @@
         <small class="icon-credit">Icons by <a href="https://www.flaticon.com/authors/google">Google</a> / <a href="https://www.flaticon.com/">Flaticon</a></small>
       </footer>
     </div>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Progressively enhance the timeline; it remains visible without JavaScript.
+      const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+      if (!motionPreference.matches && 'IntersectionObserver' in window) {
+        const entries = document.querySelectorAll('.timeline-entry');
+        const observer = new IntersectionObserver((records) => {
+          records.forEach(({ target, isIntersecting }) => {
+            if (!isIntersecting) return;
+            target.dataset.reveal = 'visible';
+            observer.unobserve(target);
+          });
+        }, { threshold: 0.08 });
+
+        entries.forEach((entry, index) => {
+          const bounds = entry.getBoundingClientRect();
+          if (bounds.top < window.innerHeight && bounds.bottom > 0) {
+            entry.style.setProperty('--reveal-delay', `${420 + index * 45}ms`);
+            entry.dataset.reveal = 'visible';
+          } else if (bounds.top >= window.innerHeight) {
+            entry.dataset.reveal = 'pending';
+            observer.observe(entry);
+          }
+          entry.addEventListener('focusin', () => {
+            entry.dataset.reveal = 'visible';
+            observer.unobserve(entry);
+          });
+        });
+
+        motionPreference.addEventListener('change', () => {
+          if (!motionPreference.matches) return;
+          observer.disconnect();
+          entries.forEach(entry => { delete entry.dataset.reveal; });
+        });
+      }
+    </script>
   </body>
 </html>
