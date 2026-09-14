@@ -82,11 +82,10 @@ h2 { font-size: 23px; font-weight: 600; letter-spacing: -.6px; }
 .timeline-entry { display: grid; grid-template-columns: 126px 1fr; position: relative; }
 .timeline-date { position: relative; padding-top: 27px; }
 .timeline-date::after { content: ""; position: absolute; top: 0; bottom: 0; width: 2px; background: var(--line); right: 0; }
-.timeline-date::before { content: ""; position: absolute; top: 37px; right: -5px; width: 12px; height: 12px; background: var(--accent); z-index: 1; }
-.timeline-entry:first-child .timeline-date::after { top: 37px; }
-.timeline-entry:last-child .timeline-date::after { bottom: auto; height: 38px; }
-.date-year { display: block; font-size: 24px; font-weight: 600; letter-spacing: -.6px; line-height: 1.3; }
-.date-month { display: block; color: var(--secondary); font-size: 14px; margin-top: 3px; }
+.timeline-date::before { content: ""; position: absolute; top: 35px; right: -5px; width: 12px; height: 12px; background: var(--accent); z-index: 1; }
+.timeline-entry:first-child .timeline-date::after { top: 43px; }
+.timeline-entry:last-child .timeline-date::after { bottom: auto; height: 43px; }
+.date-year { display: block; font-size: 24px; font-weight: 600; letter-spacing: -.6px; line-height: 32px; }
 .project { margin-left: 37px; padding: 27px 0 27px; border-bottom: 1px solid var(--line); min-width: 0; }
 .project-heading { display: flex; gap: 12px; align-items: center; margin-bottom: 10px; }
 h3 { font-size: 20px; font-weight: 600; line-height: 1.45; letter-spacing: -.4px; }
@@ -129,9 +128,8 @@ footer a { color: var(--secondary); text-decoration: none; }
   .timeline-date { padding-top: 28px; display: flex; }
   .timeline-date time { display: flex; align-items: baseline; gap: 10px; }
   .timeline-date::after { display: none; }
-  .timeline-date::before { right: auto; left: -31px; top: 37px; }
-  .date-year { font-size: 21px; }
-  .date-month { font-size: 14px; margin: 0; }
+  .timeline-date::before { right: auto; left: -31px; top: 34px; }
+  .date-year { font-size: 21px; line-height: 28px; }
   .project { margin-left: 0; padding: 15px 0 26px; }
   h3 { font-size: 20px; }
   .project-heading { gap: 10px; align-items: center; }
