@@ -257,3 +257,7 @@ h3 .title-ending { display: inline-block; color: inherit; font: inherit; margin:
   .intro-copy > .intro-links:focus-within,
   .timeline-entry:focus-within { animation: none; opacity: 1; transform: none; }
 }
+
+.recent-projects { min-width: 0; }
+
+.project-icon-rounded { border-radius: 6px; }
